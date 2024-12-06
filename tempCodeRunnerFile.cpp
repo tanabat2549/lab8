@@ -1,16 +1,3 @@
-/*
-"Enter your age: "
-"Enter your height: "
-"Enter your bounty: "
-"Your character = "
-"Zoro"
-"Sanji"
-"Usopp"
-"Chopper"
-"Franky"
-"Brook"
-"Jinbe"
-*/
 #include<iostream>
 #include<string>
 using namespace std;
@@ -24,7 +11,7 @@ int main(){
     cin >> age;
     cin.ignore();
 
-    if(age <= 25){
+    if(age < 25){
         cout << "Enter your height: ";
         cin >> height;
         cin.ignore();
@@ -44,7 +31,7 @@ int main(){
                 cout << "Your character = Sanji";
             }
         }
-    }else if(age <= 60){
+    }else if(age < 60){
         cout << "Enter your bounty: ";
         cin >> bounty;
         cin.ignore(); 
